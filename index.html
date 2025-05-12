@@ -3,9 +3,227 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="frontend/css/home.css">
+    <link rel="stylesheet" href="frontend/css/index.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
     <title>Document</title>
 </head>
 <body>
-    
+    <!-- <svg width="200" height="200" viewBox="0 0 100 100">
+        <polygon points="50,1 95,27.5 95,72.5 50,100 5,72.5 5,27.5" fill="#2ecc71" />
+    </svg> -->
+    <!-- <div class="hexagonito"></div>
+    <div class="hexagonito2"></div> -->
+      
+    <section class="container">
+        <div class="preliminar">
+            <div class="pre-int">
+                <div>
+                    <i class="fa-solid fa-phone-flip"></i>
+                    <p class="regular">+57 123 456 78 90</p>
+                </div>
+                <div>
+                    <i class="fa-solid fa-envelope"></i>
+                    <a href="" class="enlace-n regular"><p>wpr@gmail.com</p></a>
+                </div>
+            </div>
+            <div class="pre-redes"> 
+                <a href="https://www.instagram.com/" target="_blank" class="redes-link"><i class="fa-brands fa-instagram redes" data-aos="zoom-in" data-aos-duration="500" data-aos-delay="100"></i></a>
+                <a href="https://www.tiktok.com/" target="_blank" class="redes-link"><i class="fa-brands fa-tiktok redes" data-aos="zoom-in" data-aos-duration="500" data-aos-delay="150"></i></a>
+                <a href="https://www.whatsapp.com/" target="_blank" class="redes-link"><i class="fa-brands fa-whatsapp redes" data-aos="zoom-in" data-aos-duration="500" data-aos-delay="200"></i></a>
+            </div>
+        </div>
+        <div class="header">
+            <div>
+                <div class="menu" id="menu">
+                    <i class="fa-solid fa-bars fa-2x"></i>
+                </div>
+                <div class="container-nofloat">
+                    <div class="menu-float" id="menu-float">
+                        <div class="menu-float-int">
+                            <nav>
+                                <ul>
+                                    <li><a href="" class="enlace bold BLACK">Inicio</a></li>
+                                    <li><a href="" class="enlace bold BLACK">Nosotros</a></li>
+                                    <li><a href="" class="enlace bold BLACK">Proyectos</a></li>
+                                    <li><a href="" class="enlace bold BLACK">Clientes</a></li>
+                                    <li><a href="" class="enlace bold BLACK">Contactanos</a></li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+                </div> 
+            </div>
+            <div class="logo">
+                <a href="#"><img class="logo-img" src="frontend/img/logos/LOGO.svg" alt="logo" data-aos="fade-up" data-aos-duration="700"></a>
+            </div>
+            <script src="frontend/js/menu.js"></script>
+        </div>
+        <div class="home">
+            <div class="homeBG">
+                <div class="homeBG-black"></div>
+            </div>
+        </div>
+        <div class="content">
+            <div class="hexagonoXL htert" style="position: absolute; left: -2%; top: -10%;"></div>
+            <div class="hexagono hblue" style="position: absolute; left: 8%; top: 35%;"></div>
+            <div class="content-text">
+                <h1 class="bold">CONOCENOS</h1>
+                <h2 class="regular">SOMOS WPR - <span class="light">WHAT PEOPLE REQUIRES</span></h2>
+                <div class="separador"></div>
+                <p class="regular">WPR Gestión en Salud S.A.S. ha liderado proyectos significativos con un fuerte compromiso social. Desde el "Acompañamiento Integral UAI" en Itagüí hasta la "Promoción de la Salud en Envigado" y el apoyo a instituciones culturales como la Escuela Superior Tecnológica de Artes Débora Arango.</p>
+            </div>
+            <div class="hexagonoXL htert" style="position: absolute; right: -2%; bottom: -10%;"></div>
+            <div class="hexagono hblue" style="position: absolute; right: 10%; bottom: 35%;"></div>
+        </div> 
+        <div class="pqe">
+            <div class="pqe-tt">
+                <h2 class="bold">PORQUE ELEGIRNOS?</h2>
+
+            </div>
+            <div class="separador"></div>
+            <div class="pqe-contenido">
+                <div class="pqe-razon">
+                    <i class="fa-solid fa-people-arrows fa-3x"></i>
+                    <h3 class="regular">Responsabilidad social</h3>
+                </div>
+                <div class="pqe-razon">
+                    <i class="fa-solid fa-medal fa-3x"></i>
+                    <h3 class="regular">Calidad</h3>
+                </div>
+                <div class="pqe-razon">
+                    <i class="fa-solid fa-folder-open fa-3x"></i>
+                    <h3 class="regular">Transparencia</h3>
+                </div>
+                <div class="pqe-razon">
+                    <i class="fa-solid fa-user-group fa-3x"></i>
+                    <h3 class="regular">Respeto</h3>
+                </div>
+                <div class="pqe-razon">
+                    <i class="fa-solid fa-people-group fa-3x"></i>
+                    <h3 class="regular">Trabajo en equipo</h3>
+                </div>
+                <div class="pqe-razon">
+                    <i class="fa-solid fa-handshake fa-3x "></i>                    
+                    <h3 class="regular">Empatia</h3>
+                </div>
+            </div>
+            <script>
+                const razones = document.querySelectorAll('.pqe-razon');
+
+                razones.forEach(item => {
+                    item.addEventListener('mouseenter', () => {
+                        razones.forEach(other => {
+                            if (other !== item) {
+                                other.classList.add('opaco');
+                            }
+                        });
+                    });
+
+                    item.addEventListener('mouseleave', () => {
+                        razones.forEach(other => {
+                            other.classList.remove('opaco');
+                        });
+                    });
+                });
+            </script>
+        </div>
+        <div class="tes-inter">
+            <div class="intervencion-proyectos">
+                <div class="intervencion-texts">
+                    <h1>hola</h1>
+                    <p>WPR Gestión en Salud S.A.S. ha liderado proyectos significativos con un fuerte compromiso social. </p>
+                </div>
+            </div>
+            <div class="tescuchamos">
+                <div class="tescuchamos-texts">
+                    <p class="bold">CRECE CON NOSOTROS</p>
+                    <div class="separador"></div>
+                    <p class="regular">Transformamos vidas con salud y compromiso. <br>
+                        ¡Contáctanos y crece con nosotros!</p>
+                    <div class="boton-tescuchamos">
+                        <p class="regular">Escribenos</p>
+                        <div class="separador"></div>
+                        <div class="botones">
+                            <a href="" class="boton-enlace"><i class="fa-brands fa-whatsapp fa-2x"></i></a>
+                            <a href="" class="boton-enlace"><i class="fa-solid fa-envelope fa-2x"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="fotter">
+            <div class="fotter-int fot-logo">
+                <img src="frontend/img/logos/LOGO.svg" alt="">
+            </div>
+            <div class="fotter-int fot-programas">
+                <h3 class="bold fot-programas-tt">NUESTROS PROGRAMAS</h3>
+                <br>
+                <ul>
+                    <li class="programa regular textonormal">programa1</li>
+                    <li class="programa regular textonormal">programa2</li>
+                    <li class="programa regular textonormal">programa3</li>
+                    <li class="programa regular textonormal">programa4</li>
+                    <li class="programa regular textonormal">programa5</li>
+                    <li class="programa regular textonormal">programa6</li>
+                    <li class="programa regular textonormal">programa7</li>
+                </ul>
+            </div>
+            <div class="fotter-int fot-contacto">
+                <h3 class="bold fot-programas-tt">CONTACTANOS O VISITANOS</h3>
+                <br>
+                <div class="fot-contacto-int">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <p class="regular textonormal">ubicacion</p>
+                </div>
+                <div class="separadorInV"></div>
+                <div class="fot-contacto-int">
+                    <i class="fa-solid fa-clock"></i>
+                    <p class="regular textonormal">horario de atencion</p>
+                </div>
+                <div class="separadorInV"></div>
+                <div class="fot-contacto-int">
+                    <i class="fa-solid fa-phone-flip"></i>
+                    <p class="regular textonormal">+57 123 456 78 90</p>
+                </div>
+                <div class="separadorInV"></div>
+                <div class="fot-contacto-int">
+                    <i class="fa-solid fa-envelope"></i>
+                    <p class="regular textonormal">fundacionhuellasdelayer<br>@gmail.com</p>
+                </div>
+            </div>
+            <div class="fotter-int fot-news">
+                <h3 class="bold fot-programas-tt">¡SIGUENOS!</h3>
+                <br><br>
+                <div class="fot-news-int">
+                    <i class="fa-brands fa-twitter redes"></i>
+                    <p class="regular textonormal">Twitter</p>
+                </div>
+                <div class="separadorInV"></div>
+                <div class="fot-news-int">
+                    <i class="fa-brands fa-instagram redes"></i>
+                    <p class="regular textonormal">Instagram</p>
+                </div>
+                <div class="separadorInV"></div>
+                <div class="fot-news-int">
+                    <i class="fa-brands fa-tiktok redes"></i>
+                    <p class="regular textonormal">Tik Tok</p>
+                </div>
+                <div class="separadorInV"></div>
+                <div class="fot-news-int">
+                    <i class="fa-brands fa-whatsapp redes"></i>
+                    <p class="regular textonormal">WhatsApp</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script>
+        AOS.init()
+    </script>
 </body>
 </html>
