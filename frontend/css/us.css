@@ -1,0 +1,107 @@
+/* home  */
+.home{
+    height: calc(82vh);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 5px;
+    position: relative;
+    padding: 5px;
+}
+.home-int{
+    border-radius: 20px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    box-shadow: 1px 1px 10px 1px rgba(0, 0, 0, 0.575);
+}
+.home-int::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    background-color: rgba(0, 0, 0, 0.507);
+}
+.home > :nth-child(1){background-image: url(../img/galeria/TERAPI-ADULTOS-UAI-WPR.svg);}
+.home > :nth-child(2){background-image: url(../img/galeria/tesc.jpg);}
+.home > :nth-child(3){background-image: url(../img/galeria/waimage.jpg);}
+.home > :nth-child(4){background-image: url(../img/galeria/terapia-UAI-WPR.svg);}
+.home-texts{
+    position: absolute;
+    top: 50%;
+    bottom: 50%;
+    left: 50%;
+    right: 50%;
+    width: 60%;
+    height: 60%;
+    transform: translate(-50%, -50%);
+    box-shadow: 1px 1px 15px 10px rgba(0, 0, 0, 0.164);
+    border-radius: 30px 100px;
+    backdrop-filter: blur(10px);
+    background-color: #84d1da67;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* mision y vision */
+.mision-vision{
+    height: 90vh;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+}
+.mision-vision::before{
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(255, 255, 255, 0.397);
+    z-index: 2;
+}
+.fondo-mision-vision{
+    position: absolute;
+    z-index: 1;
+    top: -70%;
+    left: 15%;
+    width: auto;
+    height: 110vw;
+    transform: rotate(90deg);
+}
+.mv{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+    z-index: 3;
+    width: 100%;
+    height: 100%;
+}
+.mision, .vision{
+    width: 40%;
+    height: 60%;
+    border-radius: 30px 100px;
+    text-align: center;
+    padding: 15px;
+    backdrop-filter: blur(10px);
+    box-shadow: 1px 1px 15px 10px rgba(0, 0, 0, 0.164);
+}
+.mision{
+    background-color: #84d1da79;
+}
+.vision{
+    background-color: #6e6e6b8f;
+}
+
+/* valores */
+.valores{
+    border: solid black;
+    height: 100vh;
+}

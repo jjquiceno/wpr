@@ -235,7 +235,7 @@ body{
 }
 .container-nofloat{
     position: relative;
-    width: 40vw;
+    min-width: 60vw;
     overflow-x: hidden;
 }
 .header:hover{
@@ -268,7 +268,7 @@ body{
     position: absolute;
     top: 50%;
     bottom: 50%;
-    left: -40vw;
+    left: -60vw;
     transition: .3s ease;
 }
 .menu-float > :nth-child(1){

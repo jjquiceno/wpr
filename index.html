@@ -8,7 +8,6 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-
     <title>Document</title>
 </head>
 <body>
@@ -21,11 +20,11 @@
     <section class="container">
         <div class="preliminar">
             <div class="pre-int">
-                <div>
+                <div data-aos="fade-up" data-aos-duration="700">
                     <i class="fa-solid fa-phone-flip"></i>
                     <p class="regular">+57 123 456 78 90</p>
                 </div>
-                <div>
+                <div data-aos="fade-up" data-aos-duration="700" data-aos-delay="200">
                     <i class="fa-solid fa-envelope"></i>
                     <a href="" class="enlace-n regular"><p>wpr@gmail.com</p></a>
                 </div>
@@ -46,11 +45,12 @@
                         <div class="menu-float-int">
                             <nav>
                                 <ul>
-                                    <li><a href="" class="enlace bold BLACK">Inicio</a></li>
-                                    <li><a href="" class="enlace bold BLACK">Nosotros</a></li>
-                                    <li><a href="" class="enlace bold BLACK">Proyectos</a></li>
-                                    <li><a href="" class="enlace bold BLACK">Clientes</a></li>
-                                    <li><a href="" class="enlace bold BLACK">Contactanos</a></li>
+                                    <li><a href="#" class="enlace bold BLACK">Inicio</a></li>
+                                    <li><a href="frontend/templates/nosotros.html" class="enlace bold BLACK">Nosotros</a></li>
+                                    <li><a href="frontend/templates/proyectos.html" class="enlace bold BLACK">Proyectos</a></li>
+                                    <li><a href="frontend/templates/clientes.html" class="enlace bold BLACK">Clientes</a></li>
+                                    <li><a href="frontend/templates/docs.html" class="enlace bold BLACK">Transparencia</a></li>
+                                    <li><a href="frontend/templates/contactus.html" class="enlace bold BLACK">Contactanos</a></li>
                                 </ul>
                             </nav>
                         </div>
@@ -63,26 +63,25 @@
             <script src="frontend/js/menu.js"></script>
         </div>
         <div class="home">
-            <div class="homeBG">
+            <div class="homeBG" data-aos="fade-up" data-aos-duration="700">
                 <div class="homeBG-black"></div>
             </div>
         </div>
         <div class="content">
-            <div class="hexagonoXL htert" style="position: absolute; left: -2%; top: -10%;"></div>
-            <div class="hexagono hblue" style="position: absolute; left: 8%; top: 35%;"></div>
+            <div class="hexagonoXL htert" style="position: absolute; left: -2%; top: -10%;" data-aos="fade-right" data-aos-duration="700"></div>
+            <div class="hexagono hblue" style="position: absolute; left: 8%; top: 35%;" data-aos="fade-right" data-aos-duration="700" data-aos-delay="150"></div>
             <div class="content-text">
                 <h1 class="bold">CONOCENOS</h1>
                 <h2 class="regular">SOMOS WPR - <span class="light">WHAT PEOPLE REQUIRES</span></h2>
                 <div class="separador"></div>
                 <p class="regular">WPR Gestión en Salud S.A.S. ha liderado proyectos significativos con un fuerte compromiso social. Desde el "Acompañamiento Integral UAI" en Itagüí hasta la "Promoción de la Salud en Envigado" y el apoyo a instituciones culturales como la Escuela Superior Tecnológica de Artes Débora Arango.</p>
             </div>
-            <div class="hexagonoXL htert" style="position: absolute; right: -2%; bottom: -10%;"></div>
-            <div class="hexagono hblue" style="position: absolute; right: 10%; bottom: 35%;"></div>
+            <div class="hexagonoXL htert" style="position: absolute; right: -2%; bottom: -10%;" data-aos="fade-down" data-aos-duration="700" ></div>
+            <div class="hexagono hblue" style="position: absolute; right: 10%; bottom: 35%;" data-aos="fade-down" data-aos-duration="700" data-aos-delay="150"></div>
         </div> 
         <div class="pqe">
             <div class="pqe-tt">
                 <h2 class="bold">PORQUE ELEGIRNOS?</h2>
-
             </div>
             <div class="separador"></div>
             <div class="pqe-contenido">
@@ -134,12 +133,21 @@
         <div class="tes-inter">
             <div class="intervencion-proyectos">
                 <div class="intervencion-texts">
-                    <h1>hola</h1>
-                    <p>WPR Gestión en Salud S.A.S. ha liderado proyectos significativos con un fuerte compromiso social. </p>
+                    <div class="hexagonoXL htert" style="position: absolute; left: -2%; top: 5%; background-image: url(frontend/img/galeria/TERAPI-ADULTOS-UAI-WPR.svg); background-size: cover; background-repeat: no-repeat;" data-aos="zoom-in" data-aos-duration="700"></div>
+                    <div class="hexagono hblue" style="position: absolute; left: -10%; top: 0%;" data-aos="zoom-in" data-aos-duration="700" data-aos-delay="150"></div>
+                    <div class="hexagono hblue" style="position: absolute; right: -10%; bottom: 0;" data-aos="zoom-in" data-aos-duration="700" data-aos-delay="150"></div>
+                    <div class="hexagonoXL htert" style="position: absolute; right: -2%; bottom: 5%; background-image: url(frontend/img/galeria/terapia-UAI-WPR.svg); background-size: cover; background-repeat: no-repeat;" data-aos="zoom-in" data-aos-duration="700"></div>
+                    <div data-aos="zoom-in" data-aos-duration="700" data-aos-delay="250">
+                        <h1 class="bold x3">Intervención en proyectos</h1>
+                        <div class="separador"></div>
+                        <p class="regular x1-5">WPR Gestión en Salud S.A.S. ha liderado proyectos significativos con un fuerte compromiso social. </p>
+                        <br>
+                        <a href="" class="inter-button bold BLACK">CONOCÉ MÁS</a>
+                    </div>
                 </div>
             </div>
             <div class="tescuchamos">
-                <div class="tescuchamos-texts">
+                <div class="tescuchamos-texts" data-aos="fade-down" data-aos-duration="700" >
                     <p class="bold">CRECE CON NOSOTROS</p>
                     <div class="separador"></div>
                     <p class="regular">Transformamos vidas con salud y compromiso. <br>
