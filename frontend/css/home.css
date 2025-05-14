@@ -117,6 +117,16 @@ body{
 .htert{
     background-color: #00acb583;
 }
+.hexagonoEdit{
+    clip-path: polygon(
+      25% 5%, 
+      75% 5%, 
+      100% 50%, 
+      75% 95%, 
+      25% 95%, 
+      0% 50%
+    );
+}
 .hexagonoXL{
     width: 280px;
     height: 250px;
@@ -355,7 +365,7 @@ body{
         width: 80vw;
     }
     .menu-float{
-        left: -120vw;
+        left: -140vw;
     }
     .menu-float-int > nav > ul{
         display: flex;
