@@ -152,6 +152,25 @@
 /* responsive */
 @media screen and (max-width: 820px){
     .home{
+        width: 100%;
+    }
+    .home-texts{
         width: 80%;
+    }
+    .mision-vision{
+        height: fit-content;
+    }
+    .mision, .vision{
+        width: 70%;
+    }
+    .mision{
+        transform: translateX(-50%);
+    }
+    .mv{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 30px 0;
+        gap: 30px;
     }
 }

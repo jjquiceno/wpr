@@ -1,0 +1,122 @@
+.home{
+    height: calc(82vh);
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.home-int{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 98%;
+    width: 99%;
+    border-radius: 10px;
+    /* box-shadow: 0 1px 10px rgba(0, 0, 0, 0.486); */
+}
+.home-texts{
+    height: 100%;
+    width: 60%;
+    /* background-image: url(../img/logos/LOGO.svg);
+    background-size: 40vw;
+    background-repeat: no-repeat;
+    background-position: center; */
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.home-texts *{
+    position: relative;
+    z-index: 5;
+}
+.home-texts::after{
+    content: '';
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 70%;
+    height: 70%;
+    background-color: rgba(255, 255, 255, 0.432);
+}
+.home-texts > :nth-child(1){
+    transform: translateX(50%);
+    z-index: 6;
+}
+.home-texts > :nth-child(3){
+    transform: translateX(-50%);
+}
+.h-t{
+    z-index: 5;
+    position: relative;
+    width: fit-content;
+    height: fit-content;
+    text-align: center;
+    padding: 20px 25px;
+    border-radius: 30px;
+    background-color: #84d1dad7;
+    /* backdrop-filter: blur(10px); */
+    /* box-shadow: 1px 1px 10px 1px rgba(0, 0, 0, 0.39); */
+}
+.puntos{
+    width: fit-content;
+    height: fit-content;
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    justify-content: center;
+    align-items: center;
+    gap: 18px;
+}
+.cajitaP{
+    border: solid #00adb5;
+    width: 1px;
+    height: 1px;
+    border-radius: 50%;
+}
+
+/* enfoque container */
+.enfoque-container{
+    height: fit-content;
+}
+.enfoquett{
+    height: 40vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    background-image: url(../img/galeria/cuidado-manos.svg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    /* box-shadow: 0 8px 15px rgba(0, 0, 0, 0.158); */
+}
+.enfoquett > :nth-child(1){
+    position: relative;
+    z-index: 2;
+    font-size: 4rem;
+}
+.textabs{
+    font-size: 6rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #00acb525;
+    width: 80%;
+}
+.enfoquecontent{
+    height: 150vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.enfc-int{
+    width: 80%;
+    height: 100%;
+    box-shadow: 1px 0 10px 1px rgba(0, 0, 0, 0.377);
+    position: relative;
+}
