@@ -4,23 +4,20 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: #f2f2f2;
 }
 .home-int{
+    background-color: white;
     display: flex;
     justify-content: space-between;
     align-items: center;
     height: 98%;
     width: 99%;
     border-radius: 10px;
-    /* box-shadow: 0 1px 10px rgba(0, 0, 0, 0.486); */
 }
 .home-texts{
     height: 100%;
     width: 60%;
-    /* background-image: url(../img/logos/LOGO.svg);
-    background-size: 40vw;
-    background-repeat: no-repeat;
-    background-position: center; */
     position: relative;
     display: flex;
     justify-content: center;
@@ -59,22 +56,7 @@
     /* backdrop-filter: blur(10px); */
     /* box-shadow: 1px 1px 10px 1px rgba(0, 0, 0, 0.39); */
 }
-.puntos{
-    width: fit-content;
-    height: fit-content;
-    display: grid;
-    grid-template-columns: repeat(10, 1fr);
-    grid-template-rows: repeat(5, 1fr);
-    justify-content: center;
-    align-items: center;
-    gap: 18px;
-}
-.cajitaP{
-    border: solid #00adb5;
-    width: 1px;
-    height: 1px;
-    border-radius: 50%;
-}
+
 
 /* enfoque container */
 .enfoque-container{
@@ -109,14 +91,233 @@
     width: 80%;
 }
 .enfoquecontent{
-    height: 150vh;
+    height: fit-content;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 .enfc-int{
-    width: 80%;
+    width: 85%;
     height: 100%;
-    box-shadow: 1px 0 10px 1px rgba(0, 0, 0, 0.377);
+    /* box-shadow: 1px 0 10px 1px rgba(0, 0, 0, 0.377); */
     position: relative;
+}
+.enfc-texts{
+    height: 150vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.enfc-grid{
+    width: 85%;
+    height: 95%;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(6, 1fr);
+    gap: 10px;
+    padding: 5px 5px 15px 5px;
+}
+.enfc-grid > :nth-child(1),
+.enfc-grid > :nth-child(3),
+.enfc-grid > :nth-child(5)
+{
+    text-align: left;
+    justify-content: left;
+}
+.enfc-grid > :nth-child(2),
+.enfc-grid > :nth-child(4),
+.enfc-grid > :nth-child(6)
+{
+    text-align: right;
+    justify-content: right;
+}
+.grid-int{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 40px;
+}
+.enfc-int > :nth-child(1){
+    left: -5%;
+    top: 5%;
+}
+.enfc-int > :nth-child(2){
+    top: 20%;
+    right: -5%;
+}
+.enfc-int > :nth-child(3){
+    left: -5%;
+    top: 35%;
+}
+.enfc-int > :nth-child(4){
+    top: 50%;
+    right: -5%;
+}
+.enfc-int > :nth-child(5){
+    left: -5%;
+    top: 65%;
+}
+.enfc-int > :nth-child(6){
+    top: 80%;
+    right: -5%;
+}
+
+/* texto principal de intervencion en proyectos */
+.inter-texts-prin{
+    height: 50vh;
+    width: 100vw;
+    background-image: url(../img/galeria/ejercicio.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-blend-mode: multiply;
+    position: relative;
+}
+.itp-texts{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    /* background-color: #00acb56c; */
+}
+.itp-texts div{
+    width: 80%;
+    text-align: center;
+    border-radius: 30px;
+    padding: 20px;
+    backdrop-filter: blur(20px);
+    background-color: rgba(255, 255, 255, 0.219);
+}
+
+
+/* dedicacion en areas */
+.areas-container{
+    width: 100vw;
+    height: 80vh;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+}
+.areas-int{
+    width: 95%;
+    height: 80%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.areas-int > div{
+    width: 45%;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.areas-int > :nth-child(1) > div > h3{
+    z-index: 2;
+    background-color: white;
+    position: relative;
+}
+.areas-int > :nth-child(1) > div{
+    width: 80%;
+    padding-bottom: 40px;
+}
+.areas-int > :nth-child(1) > div > p{
+    width: 80%;
+}
+.areas-logo{
+    width: 200px;
+    transform: translate(0, 40%);
+    z-index: 1;
+}
+.areas-grid{
+    height: 95%;
+    width: 95%;
+    display: grid;
+    grid-template-columns: 10% 85%;
+    grid-template-rows: repeat(6, 1fr);
+    justify-content: space-around;
+    gap: 10px;
+    padding: 10px;
+}
+.areas-grid-int{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+.hexaC{
+    justify-content: center;
+}
+.p2{
+    display: none;
+}
+
+@media screen and (max-width: 768px) {
+    .home{
+        height: 60vh;
+    }
+    .home-int{
+        flex-direction: column;
+        justify-content: space-around;
+        padding: 30px 0;
+    }
+    .home-texts > .h-t > h1{
+        font-size: 2rem;
+    }
+    .p1{
+        display: none;
+    }
+    .p2{
+        display: grid;
+    }
+    .inter-texts-prin{
+        height: 100vh;
+    }
+    .enfoquecontent{
+        overflow-x: hidden;
+    }
+    .enfc-int > :nth-child(1){
+        left: -30%;
+        top: 5%;
+    }
+    .enfc-int > :nth-child(2){
+        top: 20%;
+        right: -30%;
+    }
+    .enfc-int > :nth-child(3){
+        left: -30%;
+        top: 35%;
+    }
+    .enfc-int > :nth-child(4){
+        top: 50%;
+        right: -30%;
+    }
+    .enfc-int > :nth-child(5){
+        left: -30%;
+        top: 68%;
+    }
+    .enfc-int > :nth-child(6){
+        top: 85%;
+        right: -30%;
+    }
+    .areas-container{
+        height: 140vh;
+    }
+    .areas-int{
+        height: 80%;
+        flex-direction: column;
+    }
+    .areas-int > div{
+        width: 80%;
+    }
+    .areas-int > :nth-child(1) > div{
+        width: 80%;
+        padding-bottom: 40px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
 }

@@ -56,6 +56,26 @@
                         </div>
                     </div>
                 </div> 
+                <div class="menu-float2" id="menu-float2">
+                    <div class="puntos1 puntos" style="grid-template-columns: repeat(16, 1fr);"></div>
+                    <div id="closeIcon">
+                        <i class="fa-solid fa-xmark fa-3x"></i>
+                    </div>
+                    <div class="menu-float-int2">
+                        <nav>
+                            <ul>
+                                <li><a href="#" class="enlace bold BLACK x1-5">Inicio</a></li>
+                                <li><a href="frontend/templates/nosotros.html" class="enlace bold BLACK x1-5">Nosotros</a></li>
+                                <li><a href="frontend/templates/proyectos.html" class="enlace bold BLACK x1-5">Proyectos</a></li>
+                                <li><a href="frontend/templates/clientes.html" class="enlace bold BLACK x1-5">Clientes</a></li>
+                                <li><a href="frontend/templates/docs.html" class="enlace bold BLACK x1-5">Transparencia</a></li>
+                                <li><a href="frontend/templates/contactus.html" class="enlace bold BLACK x1-5">Contactanos</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                
+                    <div class="puntost puntos" style="grid-template-columns: repeat(16, 1fr);"></div>
+                </div>
             </div>
             <div class="logo">
                 <a href="#"><img class="logo-img" src="frontend/img/logos/LOGO.svg" alt="logo" data-aos="fade-up" data-aos-duration="700"></a>
@@ -229,6 +249,14 @@
             </div>
         </div>
     </section>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            puntos('.puntos', 220);
+            puntos('.puntos1', 64);
+            puntos('.puntost', 288);
+         });
+    </script>
+    <script src="frontend/js/puntos.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
     <script>
         AOS.init()

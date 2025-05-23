@@ -51,6 +51,26 @@
                         </div>
                     </div>
                 </div> 
+                <div class="menu-float2" id="menu-float2">
+                    <div class="puntos1 puntos" style="grid-template-columns: repeat(16, 1fr);"></div>
+                    <div id="closeIcon">
+                        <i class="fa-solid fa-xmark fa-3x"></i>
+                    </div>
+                    <div class="menu-float-int2">
+                        <nav>
+                            <ul>
+                                <li><a href="../../index.html" class="enlace bold BLACK x1-5">Inicio</a></li>
+                                <li><a href="nosotros.html" class="enlace bold BLACK x1-5">Nosotros</a></li>
+                                <li><a href="proyectos.html" class="enlace bold BLACK x1-5">Proyectos</a></li>
+                                <li><a href="clientes.html" class="enlace bold BLACK x1-5">Clientes</a></li>
+                                <li><a href="docs.html" class="enlace bold BLACK x1-5">Transparencia</a></li>
+                                <li><a href="contactus.html" class="enlace bold BLACK x1-5">Contactanos</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                
+                    <div class="puntost puntos" style="grid-template-columns: repeat(16, 1fr);"></div>
+                </div>
             </div>
             <div class="logo">
                 <a href="#"><img class="logo-img" src="../img/logos/LOGO.svg" alt="logo" data-aos="fade-up" data-aos-duration="700"></a>
@@ -72,21 +92,34 @@
                 <div class="separador"></div>
             </div>
         </div>
-        <div class="mision-vision">
-            <img class="fondo-mision-vision" src="../img/galeria/estetoscopio.jpg" alt="fondo-mision-vision">
-            <div class="mv">
-                <div class="mision" data-aos="fade-up" data-aos-duration="700">
-                    <h3 class="bold x2">MISIÓN</h3>
-                    <div class="separador"></div>
-                    <p class="regular" style="font-size: 1.2rem;">WPR Gestión en Salud S.A.S., para el año 2025 seremos una organización reconocida a nivel público y privado por pres- tar servicios profesionales con altos estándares de calidad que permiten a nuestros clientes optimizar sus recursos téc- nicos y financieros, logrando mejoras en las condiciones de vida de sus colaboradores y población impactada.</p>
+        <div class="ms-qs-container">
+            <div class="quienes-somos">
+                <div class="qs-logo">
+                    <div class="puntos" style="grid-template-columns: repeat(12, 1fr);"></div>
+                    <img src="../img/logos/LOGO.svg" alt="">
+                    <div class="puntos" style="grid-template-columns: repeat(12, 1fr);"></div>
                 </div>
-                <div class="vision" data-aos="fade-down" data-aos-duration="700">
-                    <H3 class="bold x2">VISIÓN</H3>
-                    <div class="separador"></div>
-                    <p class="regular" style="font-size: 1.2rem;">Trabajamos para operar de manera idónea los recursos técnicos y financieros, presentando propuestas de valor acorde a las necesidades que se desean satisfacer y velando por su correcta ejecución.</p>
+                <div class="qs-texts">
+                    <p class="regular BLACK ">Somos una empresa con más de 11 años de experiencia, comprometida con el bienestar de las comunidades y la defensa de sus derechos. Nuestro trabajo se fundamenta en la responsabilidad social, la inclusión y el respeto por la diversidad. Nos especializamos en la prestación de servicios integrales en salud pública y en la ejecución de proyectos que promueven el desarrollo humano y social. A través de cada una de nuestras acciones, buscamos restablecer derechos y generar un impacto positivo y duradero en la vida de las personas.</p>
+                </div>
+            </div>
+            <div class="mision-vision">
+                <img class="fondo-mision-vision" src="../img/galeria/estetoscopio.jpg" alt="fondo-mision-vision">
+                <div class="mv">
+                    <div class="mision" data-aos="fade-up" data-aos-duration="700">
+                        <h3 class="bold x2">MISIÓN</h3>
+                        <div class="separador"></div>
+                        <p class="regular" style="font-size: 1.2rem;">WPR Gestión en Salud S.A.S., para el año 2025 seremos una organización reconocida a nivel público y privado por pres- tar servicios profesionales con altos estándares de calidad que permiten a nuestros clientes optimizar sus recursos téc- nicos y financieros, logrando mejoras en las condiciones de vida de sus colaboradores y población impactada.</p>
+                    </div>
+                    <div class="vision" data-aos="fade-down" data-aos-duration="700">
+                        <H3 class="bold x2">VISIÓN</H3>
+                        <div class="separador"></div>
+                        <p class="regular" style="font-size: 1.2rem;">Trabajamos para operar de manera idónea los recursos técnicos y financieros, presentando propuestas de valor acorde a las necesidades que se desean satisfacer y velando por su correcta ejecución.</p>
+                    </div>
                 </div>
             </div>
         </div>
+        
         <div class="valores-tt">
             <div class="separador" data-aos="zoom-in" data-aos-duration="700"></div>
             <h2 class="black x3" data-aos="zoom-in" data-aos-duration="700" data-aos-delay="300">NUESROS <span class="light">VALORES</span></h2>
@@ -224,6 +257,14 @@
             </div>
         </div>
     </section>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            puntos('.puntos', 36);
+            puntos('.puntos1', 64);
+            puntos('.puntost', 288);
+         });
+    </script>
+    <script src="../js/puntos.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
     <script>
         AOS.init()

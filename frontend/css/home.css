@@ -106,6 +106,12 @@ body{
     margin: 10px auto;
     width: 70%;
 }
+.separador-blue{
+    width: 30%;
+    border: solid #00adb5;
+    margin: 20px 0;
+    height: 0;
+}
 
 /* figuras */
 .hwhite{
@@ -188,6 +194,28 @@ body{
       25% 95%, 
       0% 50%
     );
+}
+
+/* puntos */
+.puntos{
+    width: fit-content;
+    height: fit-content;
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    /* grid-template-rows: repeat(5, 1fr); */
+    justify-content: center;
+    align-items: center;
+    gap: 18px;
+}
+.cajitaP{
+    border: solid #00adb5;
+    width: 1px;
+    height: 1px;
+    border-radius: 50%;
+}
+.p3{
+    position: absolute; 
+    transform: rotate(90deg);
 }
 
 /* preliminar */
@@ -281,6 +309,28 @@ body{
     left: -60vw;
     transition: .3s ease;
 }
+.menu-float2{
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: -100vw;
+    transition: .3s ease;
+    display: none;
+    border-radius: 0 30px 30px 0;
+}
+.menu-float2.active{
+    left: 0;
+    background-color: white;
+    z-index: 5;
+    box-shadow: 10px 1px 20px rgba(0, 0, 0, 0.349);
+}
+.menu-float-int2 > nav > ul{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    list-style: none;
+}
 .menu-float > :nth-child(1){
     height: 100%;
     display: flex;
@@ -361,18 +411,6 @@ body{
     .fotter-int{
         width: 80%;
     }
-    .container-nofloat{
-        width: 80vw;
-    }
-    .menu-float{
-        left: -140vw;
-    }
-    .menu-float-int > nav > ul{
-        display: flex;
-        gap: 10px;
-        list-style: none;
-        flex-wrap: wrap;
-    }
     .logo-img{
         width: 20vw;
     }
@@ -384,5 +422,17 @@ body{
         width: fit-content;
         overflow-x: visible;
         overflow-y: auto;
+    }
+    #menu-float{
+        display: none;
+    }
+    .menu-float2{
+        display: flex;
+        flex-direction: column;
+        padding: 20px;
+        gap: 20px;
+    }
+    .enlace{
+        background-color: none;
     }
 }

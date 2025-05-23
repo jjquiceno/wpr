@@ -49,12 +49,54 @@
     align-items: center;
 }
 
+/* container ms y quienes somos */
+.ms-qs-container{
+    height: fit-content;
+    background-color: #f4dfde52;
+    border-radius: 30px;
+}
+
+/* quienes somos */
+.quienes-somos{
+    /* border: solid black; */
+    width: 100vw;
+    height: 60vh;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.qs-logo{
+    /* border: solid black; */
+    width: 70vw;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.qs-logo img{
+    width: 150px;
+    height: auto;
+    object-fit: cover;
+    filter: drop-shadow(1px 1px 10px #00acb5c7);
+    opacity: .5;
+}
+.qs-texts{
+    /* border: solid black; */
+    width: 70%;
+    padding: 20px;
+    text-align: center;
+    font-size: 1.2rem;
+    border-radius: 30px;
+}
+
 /* mision y vision */
 .mision-vision{
     height: 90vh;
     position: relative;
     z-index: 1;
     overflow: hidden;
+    border-radius: 30px 30px 0 0;
 }
 .mision-vision::before{
     content: '';
@@ -153,6 +195,7 @@
 @media screen and (max-width: 820px){
     .home{
         width: 100%;
+        overflow: hidden;
     }
     .home-texts{
         width: 80%;
@@ -172,5 +215,16 @@
         align-items: center;
         padding: 30px 0;
         gap: 30px;
+    }
+    .quienes-somos{
+        height: fit-content;
+    }
+    .qs-logo{
+        padding: 20px 0;
+        flex-direction: column;
+        gap: 20px;
+    }
+    .valores-tt{
+        text-align: center;
     }
 }
