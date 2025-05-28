@@ -112,6 +112,10 @@ body{
     margin: 20px 0;
     height: 0;
 }
+.separadaor-text1{
+    border: 1px solid black;
+    width: 80%;
+}
 
 /* figuras */
 .hwhite{

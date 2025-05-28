@@ -10,13 +10,6 @@
     <title>Document</title>
 </head>
 <body>
-    <!-- <svg width="200" height="200" viewBox="0 0 100 100">
-        <polygon points="50,1 95,27.5 95,72.5 50,100 5,72.5 5,27.5" fill="#2ecc71" />
-    </svg> -->
-    <!-- <div class="hexagono"></div>
-    <div class="hexagonito"></div>
-    <div class="hexagonito2"></div> -->
-      
     <section class="container">
         <div class="preliminar">
             <div class="pre-int">
@@ -85,17 +78,95 @@
 
         <div class="home">
             <div class="homeBG">
-                <div class="homeBG-black"></div>
+                <div class="home-texts">
+                    <h1 class="black x3">NUESTROS <div class="separador"></div><span class="light">CLIENTES</span></h1>
+                </div>
             </div>
         </div>
 
-        <div class="content">
-            hola
+        <div class="clientes clientes2">
+            <div class="c2-texts" data-aos="fade-down" data-aos-duration="700" data-aos-delay="0">    
+                <p class="bold x2">Municipio de Envigado</p>
+            </div>
+            <div class="c2-texts" data-aos="fade-down" data-aos-duration="700" data-aos-delay="50">    
+                <p class="bold x2">Municipio de Itagüí</p>
+            </div>
+            <div class="c2-texts" data-aos="fade-down" data-aos-duration="700" data-aos-delay="100">    
+                <p class="bold x2">Inder Envigado</p>
+            </div>
+            <div class="c2-texts" data-aos="fade-down" data-aos-duration="700" data-aos-delay="150">    
+                <p class="bold x2">Hospital general de medellín</p>
+            </div>
+            <div class="c2-texts" data-aos="fade-down" data-aos-duration="700" data-aos-delay="200">    
+                <p class="bold x2">e.s.e hospital san juan de dios</p>
+            </div>
+            <div class="c2-texts" data-aos="fade-down" data-aos-duration="700" data-aos-delay="250">    
+                <p class="bold x2">E.S.E Santa Gertrudis Envigado</p>
+            </div>
+            <div class="c2-texts" data-aos="fade-down" data-aos-duration="700" data-aos-delay="300">    
+                <p class="bold x2">E.S.E Hospital Héctor Abad Gómez de Yondo</p>
+            </div>
+            <div class="c2-texts" data-aos="fade-down" data-aos-duration="700" data-aos-delay="350">    
+                <p class="bold x2">Escuela superior tecnológicos de artes Débora Arango</p>
+            </div>
+            <div class="c2-texts" data-aos="fade-down" data-aos-duration="700" data-aos-delay="400">    
+                <p class="bold x2">Hospital la maría</p>
+            </div>
         </div>
 
+        <div class="clientes clientes1">
+            <div class="figuras-container" style="top: 0; left: -7%;"></div>
+            <div class="figuras-container" style="top: 11%; right: -6%;"></div>
+            <div class="figuras-container" style="top: 22%; left: -7%;"></div>
+            <div class="figuras-container" style="top: 33%; right: -6%;"></div>
+            <div class="figuras-container" style="top: 44%; left: -7%;"></div>
+            <div class="figuras-container" style="top: 55%; right: -6%;"></div>
+            <div class="figuras-container" style="top: 66%; left: -7%;"></div>
+            <div class="figuras-container" style="top: 77%; right: -6%;"></div>
+            <div class="figuras-container" style="top: 88%; left: -7%;"></div>
+        </div>
+        <script>
+            const caja = document.querySelectorAll('.figuras-container')
+            const textos = [
+                'Municipio de Envigado',
+                'Municipio de Itagüí',
+                'Inder Envigado',
+                'Hospital general de medellín',
+                'e.s.e hospital san juan de dios',
+                'E.S.E Santa Gertrudis Envigado',
+                'E.S.E Hospital Héctor Abad Gómez de Yondo',
+                'Escuela superior tecnológicos de artes Débora Arango',
+                'Hospital la maría'
+            ]
+            caja.forEach((cajaC, index) => {
+                const circulos = document.createElement('div')
+                circulos.classList.add('circulos')
+                const barra = document.createElement('div')
+                barra.classList.add('barra')
+                const circulito = document.createElement('div')
+                circulito.classList.add('circulito')
+                const textoCliente = document.createElement('p')
+                textoCliente.classList.add('x2', 'bold', 'text-cliente')
+                textoCliente.textContent = textos[index]
+                if(index % 2 === 0) {
+                    cajaC.appendChild(circulos)
+                    cajaC.appendChild(barra)
+                    cajaC.appendChild(circulito) 
+                    cajaC.appendChild(textoCliente) 
+                    textoCliente.style.marginLeft = '10px'
+                }else{
+                    cajaC.appendChild(textoCliente)
+                    cajaC.appendChild(circulito)
+                    cajaC.appendChild(barra)
+                    cajaC.appendChild(circulos)
+                    textoCliente.style.marginRight = '10px'
+                }
+               
+            })
+        </script>
         <div class="fotter">
             <div class="fotter-int fot-logo">
-                <img src="frontend/img/logos/LOGO.svg" alt="">
+                <img src="../img/logos/LOGO.svg" alt="">
             </div>
             <div class="fotter-int fot-programas">
                 <h3 class="bold fot-programas-tt">NUESTROS PROGRAMAS</h3>
@@ -158,6 +229,14 @@
             </div>
         </div>
     </section>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            puntos('.puntos', 220);
+            puntos('.puntos1', 64);
+            puntos('.puntost', 288);
+         });
+    </script>
+    <script src="../js/puntos.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
     <script>
         AOS.init()
