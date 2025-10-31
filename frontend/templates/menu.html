@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .menu-container {
+        perspective: 1000px;
+        position: relative;
+        display: inline-block;
+        }
+
+        .menu-wrapper {
+        width: 200px;
+        transform-style: preserve-3d;
+        transition: transform 0.6s ease;
+        transform-origin: bottom center;
+        transform: rotateX(90deg);
+        position: absolute;
+        top: 100%;
+        left: 0;
+        background: #333;
+        border-radius: 8px;
+        overflow: hidden;
+        z-index: 10;
+        border: solid rgba(0, 0, 0, 0.363);
+        }
+
+        .menu {
+        display: flex;
+        flex-direction: column;
+        padding: 10px;
+        }
+
+        .menu a {
+        color: white;
+        padding: 10px;
+        text-decoration: none;
+        border-bottom: 1px solid #444;
+        transition: background 0.3s;
+        }
+
+        .menu a:hover {
+        background: #444;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="menu-container">
+    <button id="toggleBtn">Menú</button>
+    <div class="menu-wrapper">
+        <div class="menu">
+        <a href="#">Inicio</a>
+        <a href="#">Servicios</a>
+        <a href="#">Nosotros</a>
+        <a href="#">Contacto</a>
+        </div>
+    </div>
+    </div>
+    <script>
+        const toggleBtn = document.getElementById('toggleBtn');
+        const menuWrapper = document.querySelector('.menu-wrapper');
+        let isOpen = false;
+
+        toggleBtn.addEventListener('click', () => {
+        isOpen = !isOpen;
+
+        if (isOpen) {
+            menuWrapper.style.transform = 'rotateX(0deg)';
+        } else {
+            menuWrapper.style.transform = 'rotateX(90deg)';
+        }
+        });
+    </script>
+</body>
+</html>
